@@ -1,17 +1,23 @@
-{% load staticfiles %}
-<!doctype html>
-<html>
-	<head>
+{% extends 'layouts/base.html' %}
+
+{% block title %} Homepage - {{block.super}} {% endblock %}
+
+{%block styles %} 
 	
-		<title> Hello Web App</title>
-		<link rel="stylesheet" href="{% static 'css/style.css' %}"/>
-	</head>
-	<body>
-		
-		hi world
-		</br>
-		
-		<img src="{% static 'images/Doraemon_2005.jpg' %}"
-	</body>
 	
-</html>
+{% endblock %}
+
+{% block content %}
+	
+	hi world
+	</br>
+	<img id="img_id" src=""/>
+	</br>
+	My Favourite Number is : {{ number }}
+	</br>
+	{% if number|divisibleby:2 %}
+		Number is Even
+	{% else %}
+		Number is Odd
+	{% endif %}
+{% endblock %}

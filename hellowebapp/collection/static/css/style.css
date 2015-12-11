@@ -1,10 +1,11 @@
 body{
 	font-size: 25px;
 	color: #87adcf;
+	padding: 10px;
 }
 
-img{
+#img_id{
 	height: 200px;
 	width: auto;
-	
+	background-image: url('http://vignette4.wikia.nocookie.net/poohadventures/images/6/62/Doraemon_2005.jpg');
 }
